@@ -1,0 +1,23 @@
+
+W ramach ćwiczenia zdefiniowany jest kod aplikacji, która służy do zapisywania graczy na pewne zawody.
+ W tym momencie w klasie Competition zdefiniowane jest pole ageLimit, które nie jest wykorzystywana,
+ a oznacza ono limit wiekowy dla danych zawodów (aby wziąć w nich udział,
+ trzeba mieć minimum tyle lat ile wynosi jego wartość).
+
+Przeanalizuj kod, a następnie korzystając z wyjątków, wprowadź do programu następujące ograniczenia:
+
+    przy próbie zapisania się na zawody uczestnika, który nie spełnia limitu wiekowego,
+    rzuć z metody addParticipant() wyjątek AgeViolationException,
+    przy próbie zapisania się uczestnika ponad limit maksymalnej liczby uczestników,
+    rzuć z metody addParticipant() wyjątek MaxCompetitorsException,
+    przy próbie zapisania się uczestnika, który już zapisał się na te zawody,
+    rzuć z metody addParticipant() wyjątek DuplicateException. Unikalność uczestników sprawdź
+    na podstawie jego numeru documentId.
+
+Możesz wykorzystać zarówno wyjątki kontrolowane jak i niekontrolowane, zastanów się nad konsekwencjami
+wykorzystania każdego z nich.
+
+Dodatkowo zabezpiecz program przed tym, żeby nie dało się tworzyć uczestników z błędnymi danymi,
+tzn. ujemnym wiekiem, albo zawodów z ujemną liczbą zawodników. Próba utworzenia obiektu Participant
+z błędnym wiekiem, powinna zawsze kończyć się błędem. Obsłuż także wyjątki związane
+z błędnie wprowadzanymi danymi, np. gdy ktoś na klawiaturze wpisze napis, zamiast liczby.

@@ -1,0 +1,12 @@
+Napisz kalkulator operujący na liczbach zmiennoprzecinkowych,
+który będzie pobierał dane od użytkownika i będzie pozwalał obliczyć wyniki dodawania, odejmowania,
+mnożenia i dzielenia.
+Program powinien być odporny na błędnie wprowadzane dane (napisy zamiast liczb) i prosić użytkownika o korektę.
+
+Obliczenie odpowiedniego działania wydziel do osobnej metody, która może rzucić jeden z dwóch wyjątków:
+
+    ArithmeticException (klasa zdefiniowana w Javie) - wyjątek rzuć, gdy dzielnik będzie liczbą 0,
+    UnknownOperatorException (własna klasa wyjątku) - wyjątek rzuć, gdy użytkownik wprowadzi operator arytmetyczny
+    inny niż +, -, * lub / i z tego powodu nie da się obliczyć wyniku.
+
+Postaraj się ograniczyć ilość kodu w metodzie main.
