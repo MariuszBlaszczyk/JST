@@ -7,8 +7,8 @@ import exceptions.zad1.model.MathematicalOperator;
 
 public class CalculatorService implements CalculatorInterface {
 
-    @Override
-    public double add(double... numbers) {
+
+    private static double add(double... numbers) {
         double sum = 0;
         for (double value : numbers) {
             sum += value;
@@ -16,8 +16,8 @@ public class CalculatorService implements CalculatorInterface {
         return sum;
     }
 
-    @Override
-    public double subtract(double... numbers) {
+
+    private static double subtract(double... numbers) {
         double sum = 0;
         for (double value : numbers) {
             sum -= value;
@@ -25,8 +25,7 @@ public class CalculatorService implements CalculatorInterface {
         return sum;
     }
 
-    @Override
-    public double multiply(double... numbers) {
+    private static double multiply(double... numbers) {
         double sum = 1;
         for (double value : numbers) {
             sum *= value;
@@ -34,8 +33,7 @@ public class CalculatorService implements CalculatorInterface {
         return sum;
     }
 
-    @Override
-    public double divide(double... numbers) {
+    private static double divide(double... numbers) {
         double sum = numbers[0];
         for (int i = 1; i < numbers.length; i++) {
             if (numbers[i] == 0) {
@@ -46,6 +44,7 @@ public class CalculatorService implements CalculatorInterface {
         return sum;
     }
 
+    @Override
     public double result(String operator, double... numbers) {
         double result;
         MathematicalOperator mathematicalOperator = MathematicalOperator.valueOf(operator);
