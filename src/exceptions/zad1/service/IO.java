@@ -9,11 +9,11 @@ public class IO {
     public static double getNumberFromUser() {
         final Scanner scanner = new Scanner(System.in);
         String userText = "";
-        int userNumber = 0;
-        String regex = "[-]?\\d+";
+        double userNumber = 0;
+        String regex = "([-]?\\d)*\\.?\\d*";
         do {
             try {
-                userNumber = Integer.parseInt(userText = scanner.next());
+                userNumber = Double.parseDouble(userText = scanner.next());
             } catch (NumberFormatException e) {
                 System.out.println("You have given an incorrect value, please provide a number.");
                 scanner.nextLine();
