@@ -8,8 +8,10 @@ Przeanalizuj kod, a następnie korzystając z wyjątków, wprowadź do programu 
 
     przy próbie zapisania się na zawody uczestnika, który nie spełnia limitu wiekowego,
     rzuć z metody addParticipant() wyjątek AgeViolationException,
+
     przy próbie zapisania się uczestnika ponad limit maksymalnej liczby uczestników,
     rzuć z metody addParticipant() wyjątek MaxCompetitorsException,
+
     przy próbie zapisania się uczestnika, który już zapisał się na te zawody,
     rzuć z metody addParticipant() wyjątek DuplicateException. Unikalność uczestników sprawdź
     na podstawie jego numeru documentId.
