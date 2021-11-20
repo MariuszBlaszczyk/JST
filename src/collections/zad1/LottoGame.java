@@ -27,18 +27,5 @@ class LottoGame {
         }
         return userNumbers;
     }
-//
-//    private static List<Integer> readNumbersFromUser2() {
-//        List<Integer> userNumbers = new ArrayList<>();
-//        Scanner input = new Scanner(System.in);
-//        for (int i = 0; i < Lotto.MAX_NUMBERS; i++) {
-//            System.out.println("Podaj kolejną liczbę");
-//            int nextNumber = input.nextInt();
-//            if (nextNumber == userNumbers.get(i)){
-//                System.out.println("Error");
-//            }
-//            userNumbers.add(nextNumber);
-//        }
-//        return userNumbers;
-//    }
+
 }
