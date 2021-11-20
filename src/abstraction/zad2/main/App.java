@@ -36,10 +36,11 @@ public class App {
 
     private static BigDecimal totalMonthlySalaries(Employee[] employees) {
         BigDecimal totalMonthlySalaries = new BigDecimal("0");
+        BigDecimal result = new BigDecimal("0");
         for (Employee employee : employees) {
-            totalMonthlySalaries.add(employee.getMonthlySalary());
+            result = totalMonthlySalaries.add(employee.getMonthlySalary());
         }
-        return totalMonthlySalaries;
+        return result;
     }
 
     private static Employee[] createEmployees() {

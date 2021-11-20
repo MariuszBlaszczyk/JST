@@ -60,8 +60,8 @@ public class ClientExplorer {
         }
         if (totalValue.compareTo(BigDecimal.ZERO) > 0) {
             BigDecimal avg = totalValue.divide(new BigDecimal(clientsFromCountryCounter));
-            System.out.println("Average customer value %s from is %.2s",country,avg);
+            System.out.println("Average customer value %s from is " + avg + country);
         }
     }
-    
+
 }
